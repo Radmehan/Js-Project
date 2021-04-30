@@ -1,0 +1,13 @@
+#container {
+    width: 700px;
+    background: #f1f0f0;
+    margin: auto;
+    padding: 20px 15px;
+}
+/*#container h1{text-align: center;}*/
+#container p{text-align:justify;}
+p#para1 {
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+#btn{background:blue;color:wheat}

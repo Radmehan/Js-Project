@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* { margin: 0px; padding: 0px; }
+#navBar { display: flex; justify-content: center; align-items: center; position: sticky; top: 0px; cursor: pointer; background: black; border-bottom: 2px solid rgb(247, 160, 0); }
+img { width: 100%; }
+.logo { width: 20%; display: flex; align-items: center; justify-content: center; }
+.logo img { width: 70%; text-align: center; border-radius: 50px; padding: 10px; }
+.nav-list { width: 70%; display: flex; justify-content: center; align-items: center; }
+.nav-list li { list-style: none; }
+.nav-list li a { text-decoration: none; padding: 27px 51px; font-size: 20px; color: wheat; font-family: Ubuntu, sans-serif; }
+.input { width: 30%; text-align: right; padding: 0px 23px; margin-right: 0px; }
+.background { background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("https://cdn.wallpapersafari.com/66/71/3NDoLA.jpg"); width: 100%; height: 100vh; background-size: cover; background-repeat: no-repeat; background-blend-mode: darken; }
+.firstSection { display: flex; align-items: center; justify-content: center; }
+.sec { margin-top: 32px; }
+.box-main { display: flex; align-items: center; justify-content: center; font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; max-width: 50%; }
+.firstHalf { color: white; width: 60%; display: flex; justify-content: center; flex-direction: column; text-align: justify; }
+.secondHalf { width: 30%; border: 1px solid white; margin-left: 32px; margin-top: 18px; border-radius: 14px; }
+.secondHalf img { border-radius: 10px; margin-top: 4px; }
+.textBig { font-size: 33px; border-bottom: 2px solid wheat; padding: 12px 0px; }
+.textSmall { font-size: 18px; padding: 10px 0px; }
+section { display: flex; align-items: center; justify-content: center; font-family: Ubuntu, sans-serif; }
+.content { display: flex; align-items: center; justify-content: center; max-width: 85%; }
+.paragraph { width: 85%; display: flex; justify-content: center; flex-direction: column; text-align: justify; }
+.sectionTag { font-size: 33px; border-bottom: 2px solid wheat; padding: 12px 0px; }
+.sectionSubTag { font-size: 18px; padding: 10px 0px; font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+.thumbnail { width: 40%; border: 1px solid white; margin-top: 18px; display: flex; justify-content: center; }
+.thumbnail img { width: 55%; border-radius: 20px; }
+.content2 { flex-direction: row-reverse; }
+.contact {display: flex;align-items: center;justify-content: center;font-family: Ubuntu, sans-serif;flex-direction: column;background: whitesmoke;}
+.contact h2 { margin-top: 35px; font-size: 40px; }
+.allinput { display: flex; align-items: center; justify-content: center; font-family: Ubuntu, sans-serif; flex-direction: column; max-width: 1200px; margin-top: 35px; }
+.input2 { width: 700px; border-radius: 10px; padding: 15px; }
+.btn2 { font-size: 18px; margin-top: 20px; border-radius: 10px; padding: 15px; text-align: right; }
+#footer {width: 100%;display: flex;background: #000000;justify-content: center;align-items: center;color: orange;height: 250px;margin-top: 2px;}
+.all_contents {width: 90%;margin: auto;display: flex;justify-content: center;align-items: center;}
+#service_block {width: 20%;/*border: 1px solid; display: flex; *//* justify-content: center; *//* align-items: center; */padding: 20px;height: 202px;margin-right: 12px;}
+#title h2 {color: rgb(96, 125, 139);font-family: "arial black";border-bottom: 2px solid orange;padding-bottom: 9px;text-align: center;}
+#content { margin-top: 10px; color: white;text-align: justify; }
+#content li { list-style: none; }
+#content a { text-decoration: none; color: white; }
+#submit { width: 94%; padding: 5px; margin: 4px 0px; background: rgba(44, 45, 51, 0.28); color: white; }
+#submit_button { width: 96%; padding: 5px; margin: 4px 5px; background: rgba(44, 45, 51, 0.28); color: white; border-radius: 5px; }
+.burger { display: none; position: absolute; cursor: pointer; right: 5%; top: 15px; }
+.line { width: 33px; background-color: white; height: 4px; margin: 5px 3px; }
+@media only screen and (max-width: 1240px) {
+  #navBar { flex-direction: column;transition: all 3s ease-out; }
+  .nav-list { flex-direction: column; }
+  .burger { display: block; }
+  .nav-list li {padding: 8px; }
+  #rightNav { width: 100%; }
+  .v-class-resp { opacity: 0; height: 30px;   }
+  /* .h-nav-resp{
+    transition: all 2s ease-out;
+  } */
+  #footer{
+      height: 100%;
+      flex-direction: column;
+  }
+  .all_contents{
+    flex-direction: column;
+  }
+  #service_block {
+    width: 50%;
+    height: 185px;
+  }
+  .v-class-resp{animation-name:navigation; animation-duration:1s;}
+
+
+@keyframes navigation{
+
+from{opacity:0; transform:translateX(-100px);}
+
+to{opacity(1); transform:translateX(0px);}
+
+
+
+}
+}
